@@ -1,0 +1,31 @@
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  grid-template-areas: "header header header header"
+                        "aside content content content"
+                        "aside content content content"
+                        "aside content content content"
+                        "footer footer footer footer";
+
+  gap: 10px;
+}
+
+.card-item {
+  background-color: rgb(6, 119, 119);
+}
+.card-red{
+  grid-area: header;
+  background-color: red;
+}
+.card-yellow{
+  grid-area: aside;
+  background-color: yellow;
+}
+.card-blue{
+  grid-area: content;
+  background-color: blue;
+}.card-green{
+  grid-area: footer;
+  background-color: green;
+}
